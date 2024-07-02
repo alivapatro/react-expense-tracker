@@ -1,0 +1,250 @@
+@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/fontawesome.min.css');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+::-webkit-scrollbar {
+  width: 1px;
+}
+
+body {
+  background-color: #f2f5f2;
+  min-height: 100vh;
+  width: 100vw;
+  font-family: 'Lato', sans-serif;
+  overflow-x: hidden;
+  overflow-y: auto;
+  margin-top: 0;
+}
+.navBar{
+    padding:1rem;
+    display: block;
+    background-color: #d6e6d7;
+    padding-bottom: 0.2rem;
+    border-bottom: 1px solid green;
+}
+.name{
+    font-size: 3.2rem;
+    font-family: 'Times New Roman';
+    color: #4e7f04;
+    text-shadow: rgb(112, 226, 156) 1px 0 5px;
+    padding-bottom: 1rem;
+}
+.links{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  
+}
+.Link{
+  padding-left: 1.2rem;
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+.Link a{
+  text-decoration: none;
+  font-size: 1.4rem;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial;
+  color:#484a33;
+}
+.dashboard{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2rem;
+}
+
+.container {
+  margin: 30px auto;
+  margin-top: 0;
+}
+
+h1 {
+  letter-spacing: 1px;
+  margin: 0;
+}
+
+h3 {
+  border-bottom: 1px solid #bbb;
+  padding-bottom:0.5rem;
+}
+.Balance{
+  text-align: center;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+}
+.incomeExpense{
+  margin: 0;
+  text-transform: uppercase;
+  border-bottom: 2px solid black;
+}
+
+.inc-exp-container {
+  border: 1px solid #bbb;
+  box-shadow:  0 1px 3px rgba(0, 0, 0, 0.12);
+  display: flex;
+  flex-direction: column;
+  margin: 1rem auto;
+  padding-right: 2rem;
+  padding-left: 2rem;
+  background-color:#ebedd8 ;
+
+}
+
+
+.incomeAmount{
+  font-size: 2rem;
+  color: #2ecc71;
+}
+
+.expenseAmount {
+  font-size: 2rem;
+  color: #c0392b;
+}
+
+label {
+  display: inline-block;
+  margin: 10px 0;
+}
+
+input[type='text'],
+input[type='number'] {
+  border: 1px solid #dedede;
+  border-radius: 2px;
+  display: block;
+  font-size: 16px;
+  padding: 10px;
+  width: 100%;
+}
+
+.btn {
+  cursor:cursor;
+  background-color: #39e95c;
+  box-shadow:  0 1px 2px rgba(0, 0, 0, 0.12);
+  color: #0e0d0d;
+  font-weight: 500;
+  border: 2px solid rgb(30, 208, 57);
+  display: inline;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  margin: 10px 0 30px;
+  padding: 10px;
+}
+.btn-box{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+ .btn:hover{
+  box-shadow: 0 0 20px 10px rgba(225, 227, 225, 0.7);
+ }
+
+
+.list {
+  list-style-type: none;
+  padding: 0;
+  margin-bottom: 40px;
+}
+
+.list li {
+  background-color: #fff;
+  box-shadow:  0 1px 3px rgba(0, 0, 0, 0.12);
+  color: #333;
+  display: flex;
+  justify-content:space-between;
+  position: relative;
+  padding:0.4rem;
+  margin: 10px 0;
+  width: 50vw;
+}
+.aa{
+  width: 50%;
+  display: flex;
+  justify-content: flex-end;
+  gap: 5rem;
+}
+
+.history .list li.income {
+  border-left: 0.5rem solid #2ecc71;
+}
+
+.history .list li.expense {
+  border-left: 0.5rem solid #c0392b;
+}
+
+.delete-btn {
+  cursor: pointer;
+  background-color: #e74c3c;
+  border: 0;
+  color: #fff;
+  font-size: 20px;
+  line-height: 20px;
+  padding: 2px 5px;
+  position: absolute;
+  top: 50%;
+  transform: translate(-100%, -50%);
+  transition: opacity 0.3s ease;
+}
+.edit-btn{
+  cursor: pointer;
+  background-color: #3ce756;
+  border: 0;
+  color: #fff;
+  font-size: 20px;
+  line-height: 20px;
+  padding: 2px 5px;
+  position: absolute;
+  top: 50%;
+  transform: translate(-100%, -50%);
+  transition: opacity 0.3s ease;
+}
+
+@media (max-width: 320px) {
+  .container {
+    width: 300px;
+  }
+}
+.summaryBox{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.summary{
+  padding: 1rem;
+}
+.title{
+  text-align: center;
+  font-size: 1.7rem;
+}
+.form-control label{
+  font-weight: 600;
+
+}
+.type{
+  display: inline;
+  border: none;
+  padding-right: 1rem;
+}
+.create{
+  padding-bottom: 0.6rem;
+  padding-left: 0.3rem;
+}
+.form-control{
+  padding-left: 0.5rem;
+}
+.history{
+  overflow-y:auto;
+  height: 40vh;
+  margin-top: 0.5rem;
+}
+.recent{
+  margin-bottom: 0.1rem;
+  border: none;
+  font-size:2rem;
+}
